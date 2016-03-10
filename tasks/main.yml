@@ -23,7 +23,7 @@
   tags:
     - riemann-server
 
-- name: Download & install Riemann release
+- name: Install Riemann release
   when: ansible_os_family == "RedHat"
   yum: name="{{ riemann_download_dir}}/riemann-{{ riemann_version }}.rpm" state=present
   tags:
