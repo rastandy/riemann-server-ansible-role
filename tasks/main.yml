@@ -40,6 +40,7 @@
   when: riemann_write_config
   tags:
     - riemann-server
+  notify: restart riemann
 
 - name: Start Riemann server
   service: name=riemann state={{ riemann_state }} enabled={{ riemann_enable }}
