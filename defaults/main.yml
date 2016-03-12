@@ -43,6 +43,12 @@ riemann_use_ws:  true
 riemann_write_config: true
 
 #
+# Riemann Extra library
+#
+riemann_extra: false
+riemann_extra_lib_dir: /usr/local/lib
+
+#
 # TLS
 #
 riemann_use_tls: false # set below variables if you set this to true

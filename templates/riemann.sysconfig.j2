@@ -1,0 +1,16 @@
+# Optionally add classes to the classpath for additional functionality
+{% if riemann_extra %}
+EXTRA_CLASSPATH={{ riemann_extra_lib_dir }}/riemann-extra.jar
+{% endif %}
+
+# Optional JAVA_OPTS
+# EXTRA_JAVA_OPTS=
+
+# Alternative path to config directory
+# RIEMANN_PATH_CONF=
+
+# Alternative path to config file
+# RIEMANN_CONFIG=
+
+# Additional options to pass to riemann on startup
+# RIEMANN_OPTS=
